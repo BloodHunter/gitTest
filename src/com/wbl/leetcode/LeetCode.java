@@ -224,6 +224,7 @@ public class LeetCode {
                 int[] postorder = {4,5,2,3,1};
                 int[] inorder = {4,2,5,1,3};
                 int[] nums = {1,0,0,0,0};
+                System.out.println("dd");
         }
 }
 class TreeNode {
