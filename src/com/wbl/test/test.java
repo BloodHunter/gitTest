@@ -11,8 +11,9 @@ class Base{}
 class Derived extends Base{}
 public class test {
         public static void main(String[] args){
-               FamilyVsExactType(new Base());
-               FamilyVsExactType(new Derived());
+                Integer var = new Integer(1);
+                change(var);
+                System.out.println(var);
         }
         public static void PatternAndMatcher(){
                 String str = "/*! Here's a block of text to use as input to the regular expression matcher. Note that we'll" +
@@ -47,5 +48,10 @@ public class test {
                 System.out.println("x.getClass().equals(Base.class): " + (x.getClass().equals(Base.class)));
                 System.out.println("x.getClass().equals(Derived.class): " + (x.getClass().equals(Derived.class)));
         }
+
+        public static void change(Integer var ){
+                var = new Integer(2);
+        }
+
 }
 
